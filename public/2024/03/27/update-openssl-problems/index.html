@@ -16,15 +16,15 @@
   <meta name="author" content="MQ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="主要记录openssl从1.0.2t版本升级到1.1.1w版本遇到的一些问题和解决方案">
+    <meta name="description" content="主要记录openssl从1.0.2t版本升级到1.1.1w版本遇到的一些问题和解决方案 openssl源码中新增接口先在源码中加入接口，然后.&#x2F;config生成makefile文件make update将新加接口加载到文件中，然后再make &amp;&amp; make install即可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="openssl版本升级">
 <meta property="og:url" content="https://example.com/2024/03/27/update-openssl-problems/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="主要记录openssl从1.0.2t版本升级到1.1.1w版本遇到的一些问题和解决方案">
+<meta property="og:description" content="主要记录openssl从1.0.2t版本升级到1.1.1w版本遇到的一些问题和解决方案 openssl源码中新增接口先在源码中加入接口，然后.&#x2F;config生成makefile文件make update将新加接口加载到文件中，然后再make &amp;&amp; make install即可">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-27T09:26:11.000Z">
-<meta property="article:modified_time" content="2024-03-28T14:25:03.177Z">
+<meta property="article:modified_time" content="2024-03-28T15:06:08.536Z">
 <meta property="article:author" content="MQ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -114,7 +114,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
+                <span>Startseite</span>
               </a>
             </li>
           
@@ -126,7 +126,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
+                <span>Archiv</span>
               </a>
             </li>
           
@@ -138,7 +138,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
+                <span>Kategorien</span>
               </a>
             </li>
           
@@ -150,7 +150,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
+                <span>Schlagwörter</span>
               </a>
             </li>
           
@@ -162,7 +162,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
+                <span>Über</span>
               </a>
             </li>
           
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          29 words
+          72 wörter
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 mins
+          1 minuten
         
       </span>
     
@@ -273,6 +273,7 @@
               <div class="markdown-body">
                 
                 <p>主要记录openssl从1.0.2t版本升级到1.1.1w版本遇到的一些问题和解决方案</p>
+<h3 id="openssl源码中新增接口"><a href="#openssl源码中新增接口" class="headerlink" title="openssl源码中新增接口"></a>openssl源码中新增接口</h3><p>先在源码中加入接口，然后<code>./config</code>生成<code>makefile</code>文件<br><code>make update</code>将新加接口加载到文件中，然后再<code>make &amp;&amp; make install</code>即可</p>
 
                 
               </div>
@@ -296,20 +297,20 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Author</div>
+          <div>Beitragsautor</div>
           <div>MQ</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Posted on</div>
+          <div>Veröffentlicht am</div>
           <div>March 27, 2024</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Licensed under</div>
+          <div>Urheberrechtshinweis</div>
           <div>
             
               
@@ -338,7 +339,7 @@
                       <a href="/2024/03/28/hello-world/" title="Hello World">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">Previous</span>
+                        <span class="visible-mobile">Vorheriger</span>
                       </a>
                     
                   </article>
@@ -362,7 +363,7 @@
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
-    <span>Table of Contents</span>
+    <span>Inhaltsverzeichnis</span>
   </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
@@ -418,7 +419,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -426,7 +427,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -605,7 +606,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
   </noscript>
 </body>
 </html>
