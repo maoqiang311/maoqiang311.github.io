@@ -102,5 +102,5 @@ theme: hexo-theme-fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:maoqiang311/maoqian311.github.io.git
+  repository: git@github.com:maoqiang331/maoqiang331.github.io.git
   branch: main
